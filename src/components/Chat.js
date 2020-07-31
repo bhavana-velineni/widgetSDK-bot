@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import io from "socket.io-client";
 import Messages from './Messages';
 import Input from './Input';
+import botIcon from './botIcon.png';
 
 import '../styles/Chat.css';
 
@@ -50,15 +51,22 @@ const Chat = ({ location }) => {
     };
 
     return (
+      <>
+      <div class='container1'>
+        <div class='container2'>
+          <img src={botIcon} alt='Bot' width="60" height="60"/>
+        </div>	
+        <div class='container3'>
+          <h2>Wi∂getSDK Care</h2>
+        </div>
+      </div>
         <div className="outerContainer">
             <div className="container">
-                <h1>
-                    Wi∂ge†SDKMate
-                </h1>
                 <Messages messages={messages} name={name} />
                 <Input message={message} setMessage={setMessage} sendMessage={sendMessage} askChatty={askChatty}  />
             </div>
         </div>
+        </>
     );
 };
 

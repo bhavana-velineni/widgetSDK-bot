@@ -20,6 +20,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll-to-bottom": "^3.0.0",
+    "bootstrap": "^4.5.0",
+    "react-bootstrap": "^1.0.1",
     "socket.io": "^2.3.0"
   },
   "scripts": {

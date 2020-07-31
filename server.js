@@ -26,7 +26,7 @@ io.on('connection', (socket) => {
 
       socket.join(user.room);
     
-      socket.emit('message', { user: 'chatty', text: `${user.name}, how can I help you ?`});
+      socket.emit('message', { user: 'chatty', text: `Hey ${user.name}, How you doing?`});
 
       callback();
     });

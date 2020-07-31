@@ -12,7 +12,7 @@ const Input = ({ setMessage, sendMessage, message, askChatty }) => {
       <input
         className="input"
         type="text"
-        placeholder="Type a message..."
+        placeholder="Type message..."
         value={message}
         onChange={({ target: { value } }) => setMessage(value)}
         onKeyPress={event => event.key === 'Enter' ? onKeyPress(event) : null}
